@@ -1,0 +1,12 @@
+# Project
+*.env-langfuse
+*.env-n8n
+*.env-pg-langfuse
+*.env-pg-n8n
+
+# MacOS
+.DS_Store
+
+# Data volumes
+.n8n
+.cache
