@@ -1,0 +1,21 @@
+{
+  "name": "n8n-custom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@langchain/community": "^0.3.45",
+    "@langchain/ollama": "^0.2.1",
+    "@n8n/n8n-nodes-langchain": "^1.96.1",
+    "axios": "^1.9.0",
+    "langfuse": "^3.37.4",
+    "n8n-workflow": "^1.82.0"
+  }
+}

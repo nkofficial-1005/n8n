@@ -1,12 +1,29 @@
-# Project
-*.env-langfuse
-*.env-n8n
-*.env-pg-langfuse
-*.env-pg-n8n
+# Dependency folders
+node_modules/
+n8n-custom/custom/dist/
 
-# MacOS
+# Package managers
+*.lock
+package-lock.json
+pnpm-lock.yaml
+
+# Logs
+*.log
+n8n-data/n8nEventLog*.log
+n8n-data/crash.journal
+
+# Databases and runtime data
+n8n-data/database.sqlite
+n8n-data/binaryData/
+n8n-data/custom/
+n8n-data/git/
+n8n-data/ssh/
+n8n-data/config/
+
+# Editor/OS files
 .DS_Store
+*.rtf
 
-# Data volumes
-.n8n
-.cache
+# Docker
+**/docker-compose.override.yml
+**/.env

@@ -17,3 +17,4 @@ services:
     volumes:
       - ./n8n-data:/home/node/.n8n
       - ./n8n-custom/custom:/home/node/.n8n/custom
+      - ./n8n-custom/custom/dist:/data/nodes
