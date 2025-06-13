@@ -18,7 +18,7 @@ class LangfuseN8nHandler extends BaseCallbackHandler {
   }
 
   async handleLLMStart(llm, prompts, runId, parentRunId, extra) {
-    console.log('[LangfuseN8nHandler] 🔔 handleLLMStart invoked');
+    console.log('[LangfuseN8nHandler] handleLLMStart invoked');
     this.startTime = new Date();
     this.llmName = llm?.model || 'ollama';
     let raw = Array.isArray(prompts) ? prompts[0] : prompts;
@@ -29,7 +29,7 @@ class LangfuseN8nHandler extends BaseCallbackHandler {
   }
 
   async handleLLMEnd(output, runId, parentRunId, tags, metadata) {
-    console.log('[LangfuseN8nHandler] 🔔 handleLLMEnd invoked');
+    console.log('[LangfuseN8nHandler] handleLLMEnd invoked');
     metadata = metadata || {};
 
     // Parse the response text
